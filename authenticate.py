@@ -12,8 +12,8 @@ def main():
     else:
         print("Invalid Credentials")
 
-
 def is_valid_credentials(username: str, password: str) -> bool:
+    accounts = {"Marina": "1234", "Flynne": "password"}
     if username == "Marina" and password == "1234":
         return True
     else:
