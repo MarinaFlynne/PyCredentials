@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-TODO write description of file
+Checks if the given credentials exist in the database
 """
 import yaml
 from hashlib import sha256
