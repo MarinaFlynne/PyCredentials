@@ -4,20 +4,7 @@ This is a small progeam that creates a database
 """
 import sqlite3
 import os
-import yaml
-
-CONFIG_FILENAME = "config.yaml"
-
-
-def get_database_filename() -> str:
-    # open config file and get dict of values
-    config_file = open(CONFIG_FILENAME)
-    config_dict = yaml.safe_load(config_file)[0]
-    config_file.close()
-
-    # get database filename from the config
-    database_filename = config_dict['database_filename']
-    return database_filename
+import db_tools
 
 
 def main():
@@ -25,7 +12,7 @@ def main():
     Main function of the program
     """
     # get the filename of the database
-    database_filename = get_database_filename()
+    database_filename = db_tools.get_database_filename()
 
     # Check if users.db already exists
     connection = sqlite3.connect(database_filename)
