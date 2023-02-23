@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 """
-Checks if the given credentials exist in the database
+Program that prompts the user for their credentials and checks if the given credentials are valid (exist in database)
 """
-import yaml
-from hashlib import sha256
 import sqlite3
 import db_tools
 

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-This is a small progeam that creates a database
+This is a small program that automates the creation of an initial database
 """
 import sqlite3
 import os

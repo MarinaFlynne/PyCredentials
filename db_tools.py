@@ -1,5 +1,5 @@
 """
-small package of useful db functions
+small package of db functions
 """
 import yaml
 from hashlib import sha256
